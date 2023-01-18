@@ -31,6 +31,9 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+
+    # django
+
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -39,6 +42,11 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'post.apps.PostConfig',
 
+    # 3rd party
+    'django_extensions',
+
+    # 3rd party
+    # 'post.app.PostsConfig',
 ]
 
 MIDDLEWARE = [

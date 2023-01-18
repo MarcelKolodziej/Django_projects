@@ -15,10 +15,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from main.views import hello_world
+# from main.views import hello_world
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('post/', include('post.urls')),
     path('', include('main.urls')),
+    path('books/', include('books.urls')),
 ]
+
+
+# You should always use include() when you include other URL patterns. admin.site.urls is the only exception to this.
